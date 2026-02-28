@@ -1,8 +1,8 @@
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white dark:bg-zinc-950 transition-colors duration-300">
+    <div className="min-h-screen bg-red-50 dark:bg-zinc-950 transition-colors duration-300">
       {/* Header / Navbar */}
-      <header className="border-b border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-xl sticky top-0 z-50 transition-colors duration-300">
+      <header className="border-b border-zinc-200 dark:border-zinc-800 bg-red-50/80 dark:bg-zinc-950/80 backdrop-blur-xl sticky top-0 z-50 transition-colors duration-300">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-36">
           <div className="flex h-16 items-center justify-between">
             <div className="text-xl font-bold tracking-tight">
@@ -21,7 +21,7 @@ export default function Home() {
                 Harga
               </a>
             </nav>
-            <button className="bg-[#FF6B6B] hover:bg-[#FF5252] text-white px-5 py-2 rounded-lg text-sm font-semibold transition-all duration-300">
+            <button className="border-3 border-red-200 bg-[#FF6B6B] hover:bg-[#FF5252] hover:border-red-300 text-white px-5 py-2 rounded-lg text-sm font-semibold transition-all duration-300">
               Mulai Gratis
             </button>
           </div>
@@ -29,7 +29,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="py-16 md:py-24 lg:py-32 relative overflow-hidden bg-white dark:bg-zinc-950 transition-colors duration-300">
+      <section className="py-16 md:py-24 lg:py-32 relative overflow-hidden bg-red-50 dark:bg-zinc-950 transition-colors duration-300">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-36">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left Column - Text Content */}
@@ -45,10 +45,10 @@ export default function Home() {
                 Platform invoice tercepat untuk bisnis Anda. Buat invoice profesional, bagikan dengan klien, dan lacak pembayaran dalam satu tempat.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
-                <button className="bg-[#FF6B6B] hover:bg-[#FF5252] text-white px-8 py-3.5 rounded-lg font-semibold text-base transition-all duration-300">
+                <button className="border-3 border-red-200 bg-[#FF6B6B] hover:bg-[#FF5252] hover:border-red-300 text-white px-8 py-3.5 rounded-lg font-semibold text-base transition-all duration-300">
                   Mulai Gratis Sekarang
                 </button>
-                <button className="border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-8 py-3.5 rounded-lg font-semibold text-base hover:bg-zinc-50 dark:hover:bg-zinc-900 hover:border-zinc-400 dark:hover:border-zinc-600 transition-all duration-300">
+                <button className="border-3 border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-8 py-3.5 rounded-lg font-semibold text-base hover:bg-zinc-100 dark:hover:bg-zinc-900 hover:border-zinc-400 dark:hover:border-zinc-600 transition-all duration-300">
                   Lihat Demo
                 </button>
               </div>
@@ -160,7 +160,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-6">
             {/* Feature 1 */}
-            <div className="group bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-8 rounded-xl hover:border-[#FF6B6B]/50 transition-all duration-300">
+            <div className="group bg-red-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-8 rounded-xl hover:border-[#FF6B6B]/50 transition-all duration-300">
               <div className="w-12 h-12 bg-zinc-100 dark:bg-zinc-800 rounded-lg flex items-center justify-center mb-6 group-hover:bg-[#FFF0F0] dark:group-hover:bg-[#3D1010]/20 transition-colors duration-300">
                 <svg className="w-6 h-6 text-zinc-700 dark:text-zinc-300 group-hover:text-[#FF6B6B] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -175,7 +175,7 @@ export default function Home() {
             </div>
 
             {/* Feature 2 */}
-            <div className="group bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-8 rounded-xl hover:border-[#FF6B6B]/50 transition-all duration-300">
+            <div className="group bg-red-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-8 rounded-xl hover:border-[#FF6B6B]/50 transition-all duration-300">
               <div className="w-12 h-12 bg-zinc-100 dark:bg-zinc-800 rounded-lg flex items-center justify-center mb-6 group-hover:bg-[#FFF0F0] dark:group-hover:bg-[#3D1010]/20 transition-colors duration-300">
                 <svg className="w-6 h-6 text-zinc-700 dark:text-zinc-300 group-hover:text-[#FF6B6B] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
@@ -190,7 +190,7 @@ export default function Home() {
             </div>
 
             {/* Feature 3 */}
-            <div className="group bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-8 rounded-xl hover:border-[#FF6B6B]/50 transition-all duration-300">
+            <div className="group bg-red-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-8 rounded-xl hover:border-[#FF6B6B]/50 transition-all duration-300">
               <div className="w-12 h-12 bg-zinc-100 dark:bg-zinc-800 rounded-lg flex items-center justify-center mb-6 group-hover:bg-[#FFF0F0] dark:group-hover:bg-[#3D1010]/20 transition-colors duration-300">
                 <svg className="w-6 h-6 text-zinc-700 dark:text-zinc-300 group-hover:text-[#FF6B6B] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
@@ -208,7 +208,7 @@ export default function Home() {
       </section>
 
       {/* Social Proof Section */}
-      <section id="testimoni" className="py-16 md:py-24 bg-white dark:bg-zinc-950 transition-colors duration-300">
+      <section id="testimoni" className="py-16 md:py-24 bg-red-50 dark:bg-zinc-950 transition-colors duration-300">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-36">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-zinc-900 dark:text-zinc-50 mb-4 tracking-tight transition-colors duration-300">
@@ -323,7 +323,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {/* Free Plan */}
-            <div className="flex flex-col bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-8 rounded-xl hover:border-zinc-300 dark:hover:border-zinc-700 transition-all duration-300">
+            <div className="flex flex-col bg-red-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-8 rounded-xl hover:border-zinc-300 dark:hover:border-zinc-700 transition-all duration-300">
               <h3 className="font-display text-2xl font-semibold text-zinc-900 dark:text-zinc-50 mb-2 tracking-tight transition-colors duration-300">
                 Gratis
               </h3>
@@ -354,13 +354,13 @@ export default function Home() {
                   Share link invoice
                 </li>
               </ul>
-              <button className="w-full border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 py-3 rounded-lg font-semibold hover:bg-zinc-50 dark:hover:bg-zinc-800 hover:border-zinc-400 dark:hover:border-zinc-600 transition-all duration-300 text-sm">
+              <button className="w-full border-3 border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 py-3 rounded-lg font-semibold hover:bg-zinc-50 dark:hover:bg-zinc-800 hover:border-zinc-400 dark:hover:border-zinc-600 transition-all duration-300 text-sm">
                 Mulai Gratis
               </button>
             </div>
 
             {/* Pro Plan */}
-            <div className="relative flex flex-col bg-white dark:bg-zinc-900 border-2 border-[#FF6B6B] p-8 rounded-xl hover:border-[#FF8A8A] transition-all duration-300 shadow-lg">
+            <div className="relative flex flex-col bg-red-50 dark:bg-zinc-900 border-2 border-[#FF6B6B] p-8 rounded-xl hover:border-[#FF8A8A] transition-all duration-300 shadow-lg">
               <div className="absolute top-6 right-6">
                 <span className="text-xs font-semibold text-[#FF5252] dark:text-[#FF8A8A] tracking-wider uppercase transition-colors duration-300">Populer</span>
               </div>
@@ -408,7 +408,7 @@ export default function Home() {
                     Support prioritas
                   </li>
                 </ul>
-                <button className="w-full bg-[#FF6B6B] hover:bg-[#FF5252] text-white py-3 rounded-lg font-semibold transition-all duration-300 text-sm">
+                <button className="border-3 border-red-200 w-full bg-[#FF6B6B] hover:bg-[#FF5252] hover:border-red-300 text-white py-3 rounded-lg font-semibold transition-all duration-300 text-sm">
                   Coba 14 Hari Gratis
                 </button>
               </div>
@@ -418,7 +418,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-white dark:bg-zinc-950 relative overflow-hidden transition-colors duration-300">
+      <section className="py-16 md:py-24 bg-red-50 dark:bg-zinc-950 relative overflow-hidden transition-colors duration-300">
         <div className="absolute inset-0">
           <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#FF6B6B]/5 dark:bg-[#FF6B6B]/5 rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#FF6B6B]/5 dark:bg-[#FF6B6B]/5 rounded-full blur-3xl"></div>
@@ -430,14 +430,14 @@ export default function Home() {
           <p className="text-base md:text-lg text-zinc-600 dark:text-zinc-400 mb-10 transition-colors duration-300">
             Bergabung dengan 10,000+ bisnis yang sudah menggunakan InvoiceFast
           </p>
-          <button className="bg-[#FF6B6B] hover:bg-[#FF5252] text-white px-10 py-4 rounded-lg font-semibold text-base transition-all duration-300">
+          <button className="border-3 border-red-200 bg-[#FF6B6B] hover:bg-[#FF5252] hover:border-red-300 text-white px-10 py-4 rounded-lg font-semibold text-base transition-all duration-300">
             Mulai Gratis Sekarang
           </button>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-white dark:bg-zinc-950 border-t border-zinc-200 dark:border-zinc-800 transition-colors duration-300">
+      <footer className="bg-red-50 dark:bg-zinc-950 border-t border-zinc-200 dark:border-zinc-800 transition-colors duration-300">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-36">
           <div className="py-8 flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="text-xl font-bold tracking-tight">
