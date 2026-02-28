@@ -37,11 +37,13 @@ npm run lint
   - Body: **Source Serif Pro** (clean, professional serif)
   - Applied via `font-display` class for headings, default `font-sans` for body text
 
-### Color Palette (Monochrome + Indigo)
+### Color Palette (Monochrome + Coral Red)
 ```
-Primary Accent: Indigo-500 (#6366f1)
-- Hover: Indigo-600 (#4f46e5)
-- Subtle: Indigo-50/50 (light), Indigo-950/20 (dark)
+Primary Accent: Coral Red (#FF6B6B)
+- Hover: #FF5252 (darker coral)
+- Light Mode Hover: #FF6B6B
+- Dark Mode Hover: #FF8A8A (lighter coral for dark backgrounds)
+- Subtle Backgrounds: #FFF0F0 (light), #3D1010/20 (dark)
 
 Monochrome Base (Light Mode):
 - Background: white (#ffffff), zinc-50 (#fafafa)
@@ -74,10 +76,10 @@ className="bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-50"
 
 **Smooth Transitions**: All color changes include `transition-colors duration-300`
 
-**Primary Accent Usage**: CTAs and highlights use indigo
+**Primary Accent Usage**: CTAs and highlights use coral red
 ```tsx
-"bg-indigo-500 hover:bg-indigo-600"
-"text-indigo-500 dark:text-indigo-400"
+"bg-[#FF6B6B] hover:bg-[#FF5252]"
+"text-[#FF6B6B] dark:text-[#FF8A8A]"
 ```
 
 **Font Application**:
@@ -106,12 +108,12 @@ className="bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-50"
 1. **Header/Navbar** (sticky)
    - Logo: "InvoiceFast" (zinc-900/zinc-50)
    - Nav links: Fitur, Testimoni, Harga
-   - CTA button: "Mulai Gratis" (indigo-500)
+   - CTA button: "Mulai Gratis" (coral red #FF6B6B)
    - Backdrop blur with transparency
 
 2. **Hero Section**
    - Badge: "Platform Invoice #1 di Indonesia"
-   - Headline: "Bikin Invoice dalam 30 Detik" (font-display, 30 Detik in indigo)
+   - Headline: "Bikin Invoice dalam 30 Detik" (font-display, 30 Detik in coral red)
    - Subheadline: Value proposition
    - CTA buttons: "Mulai Gratis Sekarang" (primary), "Lihat Demo" (secondary)
    - Invoice preview: Clean, modern invoice mockup (white bg)
@@ -122,7 +124,7 @@ className="bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-50"
      - Bikin Invoice Cepat
      - Share Link
      - Track Status
-   - Cards: White/zinc-900 with subtle border, hover: indigo-500/50 border
+   - Cards: White/zinc-900 with subtle border, hover: coral red border
 
 4. **Social Proof Section**
    - Stats row (3 cards):
@@ -139,13 +141,13 @@ className="bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-50"
    - Section heading: "Pilih Paket Anda"
    - 2 pricing cards (flex-col, buttons aligned at bottom):
      - **Gratis**: Rp 0/bulan, 3 features
-     - **Pro**: Rp 99.000/bulan, 5+ features, "Populer" badge, indigo border
+     - **Pro**: Rp 99.000/bulan, 5+ features, "Populer" badge, coral red border
 
 6. **CTA Section**
    - Headline: "Siap Membuat Invoice Pertama Anda?"
    - Subtext: "Bergabung dengan 10,000+ bisnis..."
    - CTA button: "Mulai Gratis Sekarang"
-   - Subtle indigo gradient orbs in background
+   - Subtle coral red gradient orbs in background
 
 7. **Footer** (minimal)
    - Logo: InvoiceFast
@@ -205,13 +207,14 @@ public/              # Static assets
 **Clean Minimal**: Generous whitespace, focused content, minimal clutter
 **Modern Tech**: Contemporary SaaS aesthetic, subtle interactions, refined details
 **Monochrome Base**: Timeless grayscale foundation
-**Single Pop Color**: Indigo-500 for CTAs and key highlights only
+**Single Pop Color**: Coral Red (#FF6B6B) for CTAs and key highlights only
 **Elegant Typography**: Playfair Display brings editorial sophistication to headings
 
 ## Recent Changes History
 
-1. **Font Update**: Changed from Plus Jakarta Sans to Playfair Display (headings) + Source Serif Pro (body)
-2. **Footer Simplification**: Reduced to horizontal layout with logo, support links, and copyright
-3. **Alignment Improvements**: Added flexbox to pricing buttons and testimonial user info for consistent alignment
-4. **Color Palette**: Changed from Cyan→Teal→Emerald gradients to Monochrome + Indigo
-5. **Aesthetic Direction**: Shifted from Editorial style to Clean Minimal + Modern Tech
+1. **Color Palette Update**: Changed from Monochrome + Indigo to **Monochrome + Coral Red** (#FF6B6B)
+2. **Font Update**: Changed from Plus Jakarta Sans to Playfair Display (headings) + Source Serif Pro (body)
+3. **Footer Simplification**: Reduced to horizontal layout with logo, support links, and copyright
+4. **Alignment Improvements**: Added flexbox to pricing buttons and testimonial user info for consistent alignment
+5. **Previous Color**: Changed from Cyan→Teal→Emerald gradients to Monochrome + Indigo (before Coral Red)
+6. **Aesthetic Direction**: Shifted from Editorial style to Clean Minimal + Modern Tech

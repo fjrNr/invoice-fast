@@ -11,17 +11,17 @@ export default function Home() {
               </span>
             </div>
             <nav className="hidden gap-8 md:flex">
-              <a href="#fitur" className="text-zinc-600 dark:text-zinc-400 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors text-sm font-medium">
+              <a href="#fitur" className="text-zinc-600 dark:text-zinc-400 hover:text-[#FF6B6B] dark:hover:text-[#FF8A8A] transition-colors text-sm font-medium">
                 Fitur
               </a>
-              <a href="#testimoni" className="text-zinc-600 dark:text-zinc-400 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors text-sm font-medium">
+              <a href="#testimoni" className="text-zinc-600 dark:text-zinc-400 hover:text-[#FF6B6B] dark:hover:text-[#FF8A8A] transition-colors text-sm font-medium">
                 Testimoni
               </a>
-              <a href="#harga" className="text-zinc-600 dark:text-zinc-400 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors text-sm font-medium">
+              <a href="#harga" className="text-zinc-600 dark:text-zinc-400 hover:text-[#FF6B6B] dark:hover:text-[#FF8A8A] transition-colors text-sm font-medium">
                 Harga
               </a>
             </nav>
-            <button className="bg-indigo-500 hover:bg-indigo-600 text-white px-5 py-2 rounded-lg text-sm font-semibold transition-all duration-300">
+            <button className="bg-[#FF6B6B] hover:bg-[#FF5252] text-white px-5 py-2 rounded-lg text-sm font-semibold transition-all duration-300">
               Mulai Gratis
             </button>
           </div>
@@ -35,17 +35,17 @@ export default function Home() {
             {/* Left Column - Text Content */}
             <div className="text-center lg:text-left">
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400 text-xs font-medium mb-6 transition-colors duration-300">
-                <span className="w-1.5 h-1.5 bg-indigo-500 rounded-full animate-pulse"></span>
+                <span className="w-1.5 h-1.5 bg-[#FF6B6B] rounded-full animate-pulse"></span>
                 Platform Invoice #1 di Indonesia
               </div>
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-zinc-900 dark:text-zinc-50 mb-6 tracking-tight leading-[1.1] transition-colors duration-300">
-                Bikin Invoice dalam <span className="text-indigo-500 dark:text-indigo-400">30 Detik</span>
+                Bikin Invoice dalam <span className="text-[#FF6B6B] dark:text-[#FF8A8A]">30 Detik</span>
               </h1>
               <p className="text-base md:text-lg text-zinc-600 dark:text-zinc-400 mb-8 max-w-xl leading-relaxed transition-colors duration-300">
                 Platform invoice tercepat untuk bisnis Anda. Buat invoice profesional, bagikan dengan klien, dan lacak pembayaran dalam satu tempat.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
-                <button className="bg-indigo-500 hover:bg-indigo-600 text-white px-8 py-3.5 rounded-lg font-semibold text-base transition-all duration-300">
+                <button className="bg-[#FF6B6B] hover:bg-[#FF5252] text-white px-8 py-3.5 rounded-lg font-semibold text-base transition-all duration-300">
                   Mulai Gratis Sekarang
                 </button>
                 <button className="border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-8 py-3.5 rounded-lg font-semibold text-base hover:bg-zinc-50 dark:hover:bg-zinc-900 hover:border-zinc-400 dark:hover:border-zinc-600 transition-all duration-300">
@@ -129,7 +129,7 @@ export default function Home() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                       </svg>
                     </button>
-                    <button className="w-8 h-8 bg-indigo-500 hover:bg-indigo-600 rounded flex items-center justify-center transition-colors duration-300">
+                    <button className="w-8 h-8 bg-[#FF6B6B] hover:bg-[#FF5252] rounded flex items-center justify-center transition-colors duration-300">
                       <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
                       </svg>
@@ -139,8 +139,8 @@ export default function Home() {
               </div>
 
               {/* Decorative elements */}
-              <div className="absolute -top-6 -right-6 w-32 h-32 bg-indigo-500/5 dark:bg-indigo-500/10 rounded-full blur-3xl -z-10"></div>
-              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-indigo-500/5 dark:bg-indigo-500/10 rounded-full blur-3xl -z-10"></div>
+              <div className="absolute -top-6 -right-6 w-32 h-32 bg-[#FF6B6B]/5 dark:bg-[#FF6B6B]/10 rounded-full blur-3xl -z-10"></div>
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-[#FF6B6B]/5 dark:bg-[#FF6B6B]/10 rounded-full blur-3xl -z-10"></div>
             </div>
           </div>
         </div>
@@ -160,9 +160,9 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-6">
             {/* Feature 1 */}
-            <div className="group bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-8 rounded-xl hover:border-indigo-500/50 transition-all duration-300">
-              <div className="w-12 h-12 bg-zinc-100 dark:bg-zinc-800 rounded-lg flex items-center justify-center mb-6 group-hover:bg-indigo-50 dark:group-hover:bg-indigo-950/20 transition-colors duration-300">
-                <svg className="w-6 h-6 text-zinc-700 dark:text-zinc-300 group-hover:text-indigo-500 transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="group bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-8 rounded-xl hover:border-[#FF6B6B]/50 transition-all duration-300">
+              <div className="w-12 h-12 bg-zinc-100 dark:bg-zinc-800 rounded-lg flex items-center justify-center mb-6 group-hover:bg-[#FFF0F0] dark:group-hover:bg-[#3D1010]/20 transition-colors duration-300">
+                <svg className="w-6 h-6 text-zinc-700 dark:text-zinc-300 group-hover:text-[#FF6B6B] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
@@ -175,9 +175,9 @@ export default function Home() {
             </div>
 
             {/* Feature 2 */}
-            <div className="group bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-8 rounded-xl hover:border-indigo-500/50 transition-all duration-300">
-              <div className="w-12 h-12 bg-zinc-100 dark:bg-zinc-800 rounded-lg flex items-center justify-center mb-6 group-hover:bg-indigo-50 dark:group-hover:bg-indigo-950/20 transition-colors duration-300">
-                <svg className="w-6 h-6 text-zinc-700 dark:text-zinc-300 group-hover:text-indigo-500 transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="group bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-8 rounded-xl hover:border-[#FF6B6B]/50 transition-all duration-300">
+              <div className="w-12 h-12 bg-zinc-100 dark:bg-zinc-800 rounded-lg flex items-center justify-center mb-6 group-hover:bg-[#FFF0F0] dark:group-hover:bg-[#3D1010]/20 transition-colors duration-300">
+                <svg className="w-6 h-6 text-zinc-700 dark:text-zinc-300 group-hover:text-[#FF6B6B] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
                 </svg>
               </div>
@@ -190,9 +190,9 @@ export default function Home() {
             </div>
 
             {/* Feature 3 */}
-            <div className="group bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-8 rounded-xl hover:border-indigo-500/50 transition-all duration-300">
-              <div className="w-12 h-12 bg-zinc-100 dark:bg-zinc-800 rounded-lg flex items-center justify-center mb-6 group-hover:bg-indigo-50 dark:group-hover:bg-indigo-950/20 transition-colors duration-300">
-                <svg className="w-6 h-6 text-zinc-700 dark:text-zinc-300 group-hover:text-indigo-500 transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="group bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-8 rounded-xl hover:border-[#FF6B6B]/50 transition-all duration-300">
+              <div className="w-12 h-12 bg-zinc-100 dark:bg-zinc-800 rounded-lg flex items-center justify-center mb-6 group-hover:bg-[#FFF0F0] dark:group-hover:bg-[#3D1010]/20 transition-colors duration-300">
+                <svg className="w-6 h-6 text-zinc-700 dark:text-zinc-300 group-hover:text-[#FF6B6B] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                 </svg>
               </div>
@@ -250,7 +250,7 @@ export default function Home() {
                 "InvoiceFast sangat membantu bisnis saya. Sekarang saya bisa membuat invoice dalam hitungan detik dan tracking pembayaran jadi lebih mudah."
               </p>
               <div className="flex items-center gap-3 mt-auto">
-                <div className="w-10 h-10 bg-indigo-500 rounded-full flex items-center justify-center text-white font-semibold text-sm flex-shrink-0">
+                <div className="w-10 h-10 bg-[#FF6B6B] rounded-full flex items-center justify-center text-white font-semibold text-sm flex-shrink-0">
                   AR
                 </div>
                 <div>
@@ -360,11 +360,11 @@ export default function Home() {
             </div>
 
             {/* Pro Plan */}
-            <div className="relative flex flex-col bg-white dark:bg-zinc-900 border-2 border-indigo-500 p-8 rounded-xl hover:border-indigo-400 transition-all duration-300 shadow-lg">
+            <div className="relative flex flex-col bg-white dark:bg-zinc-900 border-2 border-[#FF6B6B] p-8 rounded-xl hover:border-[#FF8A8A] transition-all duration-300 shadow-lg">
               <div className="absolute top-6 right-6">
-                <span className="text-xs font-semibold text-indigo-600 dark:text-indigo-400 tracking-wider uppercase transition-colors duration-300">Populer</span>
+                <span className="text-xs font-semibold text-[#FF5252] dark:text-[#FF8A8A] tracking-wider uppercase transition-colors duration-300">Populer</span>
               </div>
-              <div className="absolute inset-0 bg-indigo-50/50 dark:bg-indigo-950/20 rounded-xl pointer-events-none"></div>
+              <div className="absolute inset-0 bg-[#FFF0F0]/50 dark:bg-[#3D1010]/20 rounded-xl pointer-events-none"></div>
               <div className="relative flex flex-col flex-grow">
                 <h3 className="font-display text-2xl font-semibold text-zinc-900 dark:text-zinc-50 mb-2 tracking-tight transition-colors duration-300">
                   Pro
@@ -408,7 +408,7 @@ export default function Home() {
                     Support prioritas
                   </li>
                 </ul>
-                <button className="w-full bg-indigo-500 hover:bg-indigo-600 text-white py-3 rounded-lg font-semibold transition-all duration-300 text-sm">
+                <button className="w-full bg-[#FF6B6B] hover:bg-[#FF5252] text-white py-3 rounded-lg font-semibold transition-all duration-300 text-sm">
                   Coba 14 Hari Gratis
                 </button>
               </div>
@@ -420,8 +420,8 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-16 md:py-24 bg-white dark:bg-zinc-950 relative overflow-hidden transition-colors duration-300">
         <div className="absolute inset-0">
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-indigo-500/5 dark:bg-indigo-500/5 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-indigo-500/5 dark:bg-indigo-500/5 rounded-full blur-3xl"></div>
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#FF6B6B]/5 dark:bg-[#FF6B6B]/5 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#FF6B6B]/5 dark:bg-[#FF6B6B]/5 rounded-full blur-3xl"></div>
         </div>
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-18 text-center relative z-10">
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-zinc-900 dark:text-zinc-50 mb-6 tracking-tight transition-colors duration-300">
@@ -430,7 +430,7 @@ export default function Home() {
           <p className="text-base md:text-lg text-zinc-600 dark:text-zinc-400 mb-10 transition-colors duration-300">
             Bergabung dengan 10,000+ bisnis yang sudah menggunakan InvoiceFast
           </p>
-          <button className="bg-indigo-500 hover:bg-indigo-600 text-white px-10 py-4 rounded-lg font-semibold text-base transition-all duration-300">
+          <button className="bg-[#FF6B6B] hover:bg-[#FF5252] text-white px-10 py-4 rounded-lg font-semibold text-base transition-all duration-300">
             Mulai Gratis Sekarang
           </button>
         </div>
@@ -446,13 +446,13 @@ export default function Home() {
               </span>
             </div>
             <div className="flex items-center gap-6 md:gap-8">
-              <a href="#" className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors">
+              <a href="#" className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-[#FF6B6B] dark:hover:text-[#FF8A8A] transition-colors">
                 Bantuan
               </a>
-              <a href="#" className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors">
+              <a href="#" className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-[#FF6B6B] dark:hover:text-[#FF8A8A] transition-colors">
                 Kontak
               </a>
-              <a href="#" className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors">
+              <a href="#" className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-[#FF6B6B] dark:hover:text-[#FF8A8A] transition-colors">
                 Privasi
               </a>
             </div>
