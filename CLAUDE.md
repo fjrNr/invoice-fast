@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**InvoiceFast** is a Next.js 16 landing page for an invoice management platform targeting Indonesian businesses. The project uses modern web technologies with an editorial design style that supports both light and dark themes.
+**InvoiceFast** is a Next.js 16 landing page for an invoice management platform targeting Indonesian businesses and freelancers. The project features a **Clean Minimal + Modern Tech** aesthetic with both light and dark theme support.
 
 ## Development Commands
 
@@ -31,48 +31,156 @@ npm run lint
 
 ### Styling System
 - **Dark Mode**: Class-based (`darkMode: "class"`)
-- **Default Theme**: Dark mode is enabled by default on `<html className="dark">` in layout.tsx
+- **Default Theme**: Dark mode enabled by default on `<html className="dark">` in layout.tsx
 - **Font System**:
-  - Headings: Playfair Display (serif, editorial feel)
-  - Body: IBM Plex Sans (clean, professional)
-- **Color Palette**:
-  - Primary: Cyan → Teal → Emerald gradients
-  - Dark background: `#050507` (near-black)
-  - Light background: `#ffffff` (white)
-  - Borders: `#18181b` (dark) / `#gray-200` (light)
+  - Headings: **Playfair Display** (serif, elegant editorial)
+  - Body: **Source Serif Pro** (clean, professional serif)
+  - Applied via `font-display` class for headings, default `font-sans` for body text
+
+### Color Palette (Monochrome + Indigo)
+```
+Primary Accent: Indigo-500 (#6366f1)
+- Hover: Indigo-600 (#4f46e5)
+- Subtle: Indigo-50/50 (light), Indigo-950/20 (dark)
+
+Monochrome Base (Light Mode):
+- Background: white (#ffffff), zinc-50 (#fafafa)
+- Surface: zinc-100, zinc-200
+- Border: zinc-200, zinc-300
+- Text Primary: zinc-900 (#18181b)
+- Text Secondary: zinc-600 (#52525b)
+- Text Tertiary: zinc-500 (#71717a)
+
+Monochrome Base (Dark Mode):
+- Background: zinc-950 (#09090b), zinc-900 (#18181b)
+- Surface: zinc-800 (#27272a), zinc-700
+- Border: zinc-800 (#27272a), zinc-700
+- Text Primary: zinc-50 (#fafafa)
+- Text Secondary: zinc-400 (#a1a1aa)
+- Text Tertiary: zinc-500 (#71717a)
+
+Status Colors:
+- Success: Emerald-500
+- Warning: Amber-400/500
+- Info: Blue-500
+```
 
 ### Key Design Patterns
 
-**Dual Theme Classes**: All components use Tailwind's `dark:` prefix for theme switching
+**Dual Theme Classes**: All components use Tailwind's `dark:` prefix
 ```tsx
-className="bg-white dark:bg-[#050507] text-gray-900 dark:text-white"
+className="bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-50"
 ```
 
 **Smooth Transitions**: All color changes include `transition-colors duration-300`
 
-**Gradient Accents**: Primary branding uses 3-color gradients
+**Primary Accent Usage**: CTAs and highlights use indigo
 ```tsx
-"bg-gradient-to-r from-cyan-500 via-teal-500 to-emerald-500"
+"bg-indigo-500 hover:bg-indigo-600"
+"text-indigo-500 dark:text-indigo-400"
 ```
 
-**Editorial Grid Pattern**: Hero section has a subtle grid background (dark mode only)
+**Font Application**:
 ```tsx
-bg-[linear-gradient(to_right,#18181b_1px,transparent_1px),linear-gradient(to_bottom,#18181b_1px,transparent_1px)]
+// Headings use Playfair Display
+<h1 className="font-display text-6xl font-bold">Title</h1>
+
+// Body text uses Source Serif Pro (default)
+<p className="text-base">Body text</p>
 ```
+
+**Flexbox Alignment**: Cards use `flex flex-col` with `flex-grow` and `mt-auto` to align content
+```tsx
+<div className="flex flex-col">
+  <div className="flex-grow">Content expands</div>
+  <div className="mt-auto">Always at bottom</div>
+</div>
+```
+
+**Responsive Spacing**: Uses `lg:px-36` for generous horizontal padding on large screens
+
+## Landing Page Structure
+
+### Sections (in order)
+
+1. **Header/Navbar** (sticky)
+   - Logo: "InvoiceFast" (zinc-900/zinc-50)
+   - Nav links: Fitur, Testimoni, Harga
+   - CTA button: "Mulai Gratis" (indigo-500)
+   - Backdrop blur with transparency
+
+2. **Hero Section**
+   - Badge: "Platform Invoice #1 di Indonesia"
+   - Headline: "Bikin Invoice dalam 30 Detik" (font-display, 30 Detik in indigo)
+   - Subheadline: Value proposition
+   - CTA buttons: "Mulai Gratis Sekarang" (primary), "Lihat Demo" (secondary)
+   - Invoice preview: Clean, modern invoice mockup (white bg)
+
+3. **Features Section** (bg-zinc-50 dark:bg-zinc-950)
+   - Section heading: "Fitur Unggulan"
+   - 3 feature cards:
+     - Bikin Invoice Cepat
+     - Share Link
+     - Track Status
+   - Cards: White/zinc-900 with subtle border, hover: indigo-500/50 border
+
+4. **Social Proof Section**
+   - Stats row (3 cards):
+     - 10,000+ Bisnis
+     - 50M+ Invoice dibuat
+     - 4.9/5 Rating
+   - Testimonials grid (3 cards):
+     - Avatar + name + position
+     - Star rating (5 stars)
+     - Testimonial text
+     - User info aligned at bottom with `flex flex-col`, `flex-grow`, `mt-auto`
+
+5. **Pricing Section** (bg-zinc-50 dark:bg-zinc-950)
+   - Section heading: "Pilih Paket Anda"
+   - 2 pricing cards (flex-col, buttons aligned at bottom):
+     - **Gratis**: Rp 0/bulan, 3 features
+     - **Pro**: Rp 99.000/bulan, 5+ features, "Populer" badge, indigo border
+
+6. **CTA Section**
+   - Headline: "Siap Membuat Invoice Pertama Anda?"
+   - Subtext: "Bergabung dengan 10,000+ bisnis..."
+   - CTA button: "Mulai Gratis Sekarang"
+   - Subtle indigo gradient orbs in background
+
+7. **Footer** (minimal)
+   - Logo: InvoiceFast
+   - Support links: Bantuan, Kontak, Privasi
+   - Copyright: © 2025 InvoiceFast
+   - Horizontal layout (flex-row on md+)
 
 ## File Structure
 
 ```
 app/
 ├── layout.tsx       # Root layout with dark mode class
-├── page.tsx         # Main landing page (single-page app)
-├── globals.css      # Tailwind imports & font loading
+├── page.tsx         # Main landing page (all sections)
+├── globals.css      # Font imports & Tailwind config
 └── favicon.ico      # App icon
+
+public/              # Static assets
 ```
 
 ## Important Notes
 
 **CSS Import Order**: In `globals.css`, Google Fonts import MUST come before `@import "tailwindcss"` to avoid parsing errors.
+
+**Font Loading**: Two fonts are loaded via Google Fonts CDN:
+```css
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Source+Serif+Pro:wght@400;500;600;700&display=swap');
+```
+
+**Tailwind v4 Theme**: Fonts are configured via `@theme inline` in globals.css:
+```css
+@theme inline {
+  --font-sans: 'Source Serif Pro', serif;
+  --font-display: 'Playfair Display', serif;
+}
+```
 
 **Build Cache**: If you encounter CSS parsing errors, delete the `.next` folder and restart the dev server.
 
@@ -81,3 +189,29 @@ app/
 - Light mode default: `<html lang="id">`
 
 **Invoice Preview**: The hero section contains a detailed HTML invoice preview on the right side (desktop) or below (mobile). It uses a white background regardless of theme to simulate a real invoice document.
+
+**Responsive Behavior**:
+- Mobile: Stacked layouts, full-width cards
+- Tablet (md): 2-column grids
+- Desktop (lg): Multi-column layouts, generous spacing with `lg:px-36`
+
+**Alignment Patterns**:
+- Pricing cards: `flex flex-col`, `flex-grow` on ul, buttons auto-align at bottom
+- Testimonial cards: `flex flex-col`, `flex-grow` on text, `mt-auto` on user info
+- Stats cards: Equal height with centered content
+
+## Design Philosophy
+
+**Clean Minimal**: Generous whitespace, focused content, minimal clutter
+**Modern Tech**: Contemporary SaaS aesthetic, subtle interactions, refined details
+**Monochrome Base**: Timeless grayscale foundation
+**Single Pop Color**: Indigo-500 for CTAs and key highlights only
+**Elegant Typography**: Playfair Display brings editorial sophistication to headings
+
+## Recent Changes History
+
+1. **Font Update**: Changed from Plus Jakarta Sans to Playfair Display (headings) + Source Serif Pro (body)
+2. **Footer Simplification**: Reduced to horizontal layout with logo, support links, and copyright
+3. **Alignment Improvements**: Added flexbox to pricing buttons and testimonial user info for consistent alignment
+4. **Color Palette**: Changed from Cyan→Teal→Emerald gradients to Monochrome + Indigo
+5. **Aesthetic Direction**: Shifted from Editorial style to Clean Minimal + Modern Tech
