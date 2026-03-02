@@ -5,11 +5,11 @@ export default function Home() {
       <header className="border-b border-zinc-200 dark:border-zinc-800 bg-red-50/80 dark:bg-zinc-950/80 backdrop-blur-xl sticky top-0 z-50 transition-colors duration-300">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-36">
           <div className="flex h-16 items-center justify-between">
-            <div className="text-xl font-bold tracking-tight">
+            <a href="/" className="text-xl font-bold tracking-tight">
               <span className="text-zinc-900 dark:text-zinc-50">
                 InvoiceFast
               </span>
-            </div>
+            </a>
             <nav className="hidden gap-8 md:flex">
               <a href="#fitur" className="text-zinc-600 dark:text-zinc-400 hover:text-[#FF6B6B] dark:hover:text-[#FF8A8A] transition-colors text-sm font-medium">
                 Fitur
@@ -21,9 +21,9 @@ export default function Home() {
                 Harga
               </a>
             </nav>
-            <button className="border-3 border-red-200 bg-[#FF6B6B] hover:bg-[#FF5252] hover:border-red-300 text-white px-5 py-2 rounded-lg text-sm font-semibold transition-all duration-300">
+            <a href="/login" className="border-3 border-red-200 bg-[#FF6B6B] hover:bg-[#FF5252] hover:border-red-300 text-white px-5 py-2 rounded-lg text-sm font-semibold transition-all duration-300">
               Mulai Gratis
-            </button>
+            </a>
           </div>
         </div>
       </header>
@@ -45,12 +45,12 @@ export default function Home() {
                 Platform invoice tercepat untuk bisnis Anda. Buat invoice profesional, bagikan dengan klien, dan lacak pembayaran dalam satu tempat.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
-                <button className="border-3 border-red-200 bg-[#FF6B6B] hover:bg-[#FF5252] hover:border-red-300 text-white px-8 py-3.5 rounded-lg font-semibold text-base transition-all duration-300">
+                <a href="/login" className="border-3 border-red-200 bg-[#FF6B6B] hover:bg-[#FF5252] hover:border-red-300 text-white px-8 py-3.5 rounded-lg font-semibold text-base transition-all duration-300">
                   Mulai Gratis Sekarang
-                </button>
-                <button className="border-3 border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-8 py-3.5 rounded-lg font-semibold text-base hover:bg-zinc-100 dark:hover:bg-zinc-900 hover:border-zinc-400 dark:hover:border-zinc-600 transition-all duration-300">
+                </a>
+                <a href="#fitur" className="border-3 border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-8 py-3.5 rounded-lg font-semibold text-base hover:bg-zinc-100 dark:hover:bg-zinc-900 hover:border-zinc-400 dark:hover:border-zinc-600 transition-all duration-300">
                   Lihat Demo
-                </button>
+                </a>
               </div>
             </div>
 
@@ -354,9 +354,9 @@ export default function Home() {
                   Share link invoice
                 </li>
               </ul>
-              <button className="w-full border-3 border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 py-3 rounded-lg font-semibold hover:bg-zinc-50 dark:hover:bg-zinc-800 hover:border-zinc-400 dark:hover:border-zinc-600 transition-all duration-300 text-sm">
+              <a href="/login" className="w-full border-3 border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 py-3 rounded-lg font-semibold hover:bg-zinc-50 dark:hover:bg-zinc-800 hover:border-zinc-400 dark:hover:border-zinc-600 transition-all duration-300 text-sm inline-block text-center">
                 Mulai Gratis
-              </button>
+              </a>
             </div>
 
             {/* Pro Plan */}
@@ -408,9 +408,9 @@ export default function Home() {
                     Support prioritas
                   </li>
                 </ul>
-                <button className="border-3 border-red-200 w-full bg-[#FF6B6B] hover:bg-[#FF5252] hover:border-red-300 text-white py-3 rounded-lg font-semibold transition-all duration-300 text-sm">
+                <a href="/login" className="border-3 border-red-200 w-full bg-[#FF6B6B] hover:bg-[#FF5252] hover:border-red-300 text-white py-3 rounded-lg font-semibold transition-all duration-300 text-sm inline-block text-center">
                   Coba 14 Hari Gratis
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -430,9 +430,9 @@ export default function Home() {
           <p className="text-base md:text-lg text-zinc-600 dark:text-zinc-400 mb-10 transition-colors duration-300">
             Bergabung dengan 10,000+ bisnis yang sudah menggunakan InvoiceFast
           </p>
-          <button className="border-3 border-red-200 bg-[#FF6B6B] hover:bg-[#FF5252] hover:border-red-300 text-white px-10 py-4 rounded-lg font-semibold text-base transition-all duration-300">
+          <a href="/login" className="border-3 border-red-200 bg-[#FF6B6B] hover:bg-[#FF5252] hover:border-red-300 text-white px-10 py-4 rounded-lg font-semibold text-base transition-all duration-300">
             Mulai Gratis Sekarang
-          </button>
+          </a>
         </div>
       </section>
 
@@ -440,11 +440,11 @@ export default function Home() {
       <footer className="bg-red-50 dark:bg-zinc-950 border-t border-zinc-200 dark:border-zinc-800 transition-colors duration-300">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-36">
           <div className="py-8 flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="text-xl font-bold tracking-tight">
+            <a href="/" className="text-xl font-bold tracking-tight">
               <span className="text-zinc-900 dark:text-zinc-50">
                 InvoiceFast
               </span>
-            </div>
+            </a>
             <div className="flex items-center gap-6 md:gap-8">
               <a href="#" className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-[#FF6B6B] dark:hover:text-[#FF8A8A] transition-colors">
                 Bantuan
