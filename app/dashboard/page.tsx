@@ -21,6 +21,10 @@ export default async function DashboardPage() {
               </span>
             </a>
             <div className="flex items-center gap-4">
+              <a href="/dashboard/invoices" className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 font-medium transition-colors duration-300">
+                Daftar Invoice
+              </a>
+              <span className="text-sm text-zinc-300 dark:text-zinc-700">|</span>
               <span className="text-sm text-zinc-600 dark:text-zinc-400 transition-colors duration-300">
                 {user.email}
               </span>
